@@ -59,7 +59,7 @@ class Telegram {
         console.log('this.channelURI', this.channelURI)
 
         // attach arrayUsers to json file containing users fetched so far
-        let arrayUsers = require('./guramaylepics.json').users;
+        let arrayUsers = require('./merkatoo1.json').users;
 
         for (let url = 0; url < this.channelURI.length; url++) {
             console.log('this.channelURI', this.channelURI[url])

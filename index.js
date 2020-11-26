@@ -18,19 +18,18 @@ const urls = [
     // 'https://web.telegram.org/#/im?p=@merkatosell',
     // 'https://web.telegram.org/#/im?p=@walia_online_market',
     // 'https://web.telegram.org/#/im?p=@guramaylepics'
-    'https://web.telegram.org/#/im?p=@zembilshoppingcenter',
-    'https://web.telegram.org/#/im?p=@ethiotech_discussion',
-    'https://web.telegram.org/#/im?p=@GDG_Addis',
-    'https://web.telegram.org/#/im?p=@christiantshirt',
-    'https://web.telegram.org/#/im?p=@ethio_developer_jobs',
-    'https://web.telegram.org/#/im?p=@Almas_TechG',
-    'https://web.telegram.org/#/im?p=@AIESEC_ExternalRelations',
-    'https://web.telegram.org/#/im?p=@myfellow',
-    'https://web.telegram.org/#/im?p=@etdevs',
-    'https://web.telegram.org/#/im?p=@gofermarket',
-    'https://web.telegram.org/#/im?p=@Shop_Habesha',
-    'https://web.telegram.org/#/im?p=@MerkatoGebeya2',
-    'https://web.telegram.org/#/im?p=@merkatoo1',
+    // 'https://web.telegram.org/#/im?p=@zembilshoppingcenter',
+    // 'https://web.telegram.org/#/im?p=@ethiotech_discussion',
+    // 'https://web.telegram.org/#/im?p=@GDG_Addis',
+    // 'https://web.telegram.org/#/im?p=@ethio_developer_jobs',
+    // 'https://web.telegram.org/#/im?p=@Almas_TechG',
+    // 'https://web.telegram.org/#/im?p=@AIESEC_ExternalRelations',
+    // 'https://web.telegram.org/#/im?p=@myfellow',
+    // 'https://web.telegram.org/#/im?p=@etdevs',
+    // 'https://web.telegram.org/#/im?p=@gofermarket',
+    // 'https://web.telegram.org/#/im?p=@Shop_Habesha',
+    // 'https://web.telegram.org/#/im?p=@MerkatoGebeya2',
+    // 'https://web.telegram.org/#/im?p=@merkatoo1',
     'https://web.telegram.org/#/im?p=@mezoMarket',
     'https://web.telegram.org/#/im?p=@merkaton1',
     'https://web.telegram.org/#/im?p=@ahadumarket12',
@@ -40,13 +39,15 @@ const urls = [
 
 ];
 
-(async() => {
-    const telegram = new Telegram(urls);
-    await telegram.initialize(BASE_URL);
-    await telegram.login(contryCode, phoneNo);
-    // const authStatus = await telegram.login(contryCode, phoneNo);
-    // console.log('authStatus -> ', authStatus)
-    // if (authStatus) {
-    //     await telegram.scrapeUsers();
-    // }
-})()
+// (async() => {
+//     const telegram = new Telegram(urls);
+//     await telegram.initialize(BASE_URL);
+//     await telegram.login(contryCode, phoneNo);
+//     // const authStatus = await telegram.login(contryCode, phoneNo);
+//     // console.log('authStatus -> ', authStatus)
+//     // if (authStatus) {
+//     //     await telegram.scrapeUsers();
+//     // }
+// })()
+
+console.log(require('./merkato101.json').users.length)
